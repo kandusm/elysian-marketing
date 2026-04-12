@@ -1,7 +1,21 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  /* config options here */
-};
+  async redirects() {
+    return [
+      {
+        source: '/:path((?!api|_next|favicon).*)',
+        has: [
+          {
+            type: 'host',
+            value: '(?!localhost).*',
+          },
+        ],
+        destination: 'https://app.elysian.money/:path*',
+        permanent: false,
+      },
+    ]
+  },
+}
 
-export default nextConfig;
+export default nextConfig
