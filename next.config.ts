@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
-        source: '/:path((?!api|_next|favicon).*)',
+        source: '/:path((?!pricing|privacy|terms|security|_next|images|favicon).*)',
         has: [
           {
             type: 'host',
