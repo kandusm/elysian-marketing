@@ -11,6 +11,15 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: 'Elysian Money — Household Financial Intelligence',
   description: 'A real double-entry ledger, privacy-aware household visibility, and an AI CFO that knows your actual numbers. Built for families who take their finances seriously.',
+  icons: {
+    icon: [
+      { url: '/images/elysian-mark.svg', type: 'image/svg+xml' },
+      { url: '/images/favicon-32.png', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/images/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+  },
   openGraph: {
     title: 'Elysian Money',
     description: 'Household financial intelligence. Built on a real ledger.',
